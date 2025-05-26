@@ -28,7 +28,7 @@ build-backend = "hatchling.build"
 publish-url = "https://upload.pypi.org/legacy/"
 
 [tool.ruff]
-extend-select = ["I"]
+lint.extend-select = ["I"]
 lint.task-tags = ["FIX", "TODO", "HACK", "WARN", "PERF", "NOTE", "TEST"]
 
 [tool.pyright]
