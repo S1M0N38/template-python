@@ -4,6 +4,11 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Code Quality"]
+    types:
+      - completed
+    branches: [main]
 
 permissions:
   contents: write
@@ -14,6 +19,7 @@ name: Release tag
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
