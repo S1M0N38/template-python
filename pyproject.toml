@@ -1,0 +1,49 @@
+[project]
+name = "template-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "S1M0N38", email = "bertolottosimone@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = []
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/S1M0N38/template-python"
+Issues = "https://github.com/S1M0N38/template-python/issues"
+Repository = "https://github.com/S1M0N38/template-python"
+Changelog = "https://github.com/S1M0N38/template-python/blob/main/CHANGELOG.md"
+
+[project.scripts]
+template-python = "template_python:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+publish-url = "https://upload.pypi.org/legacy/"
+
+[tool.ruff]
+extend-select = ["I"]
+lint.task-tags = ["FIX", "TODO", "HACK", "WARN", "PERF", "NOTE", "TEST"]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-v"
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+  "basedpyright>=1.28.2",
+  "pytest>=8.3.5",
+  "pytest-asyncio>=0.25.3",
+  "ruff>=0.10.0",
+]
