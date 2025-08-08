@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/S1M0N38/template-python/compare/v0.1.0...v0.2.0) (2025-08-08)
+
+
+### Features
+
+* add claude code commit command ([9a00c6f](https://github.com/S1M0N38/template-python/commit/9a00c6ff285d5f49f12cbb34faacf8e2f23fb421))
+* add claude code hooks for ruff ([b2b1bd3](https://github.com/S1M0N38/template-python/commit/b2b1bd31ac591bb1e5b2c6eaed49960022420837))
+* add command to initialize project from template ([fbd7995](https://github.com/S1M0N38/template-python/commit/fbd79953d5583009ca95d30d476623c4ae01e832))
+
+
+### Documentation
+
+* update uv command ([815db35](https://github.com/S1M0N38/template-python/commit/815db3524b8f67f7c1df7c01b73189645c8eedb8))
+
 ## 0.1.0 (2025-05-26)
 
 
