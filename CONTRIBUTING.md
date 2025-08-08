@@ -30,8 +30,7 @@ cd template-python
 2. Create environment:
 
 ```sh
-uv venv
-uv pip install -e ".[dev]"
+uv sync --all-extras
 ```
 
 3. Set up environment variables (if your project uses them):
@@ -46,10 +45,7 @@ The environment setup is now ready to use. Every time you are working on the pro
 ```sh
 source .envrc
 ```
-Or, if you are in the virtual environment shell:
-```sh
-source .venv/bin/activate
-```
+
 
 > You can use [direnv](https://github.com/direnv/direnv) to automatically activate the environment when you enter the project directory.
 
