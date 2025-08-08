@@ -1,10 +1,8 @@
 # Example .envrc file for direnv
 # Copy this file to .envrc and fill in your actual values.
-#
+
 # Load the virtual environment
-# layout python /path/to/your/python_interpreter (e.g. python3.11)
-# or use a more specific path if needed:
-# layout python .venv/bin/python
+# source .venv/bin/activate
 
 # Example environment variables:
 # export MY_VARIABLE="some_value"
@@ -19,4 +17,4 @@ export PYTHONPATH="${PWD}/src:${PYTHONPATH}"
 
 # Example: Flask app
 # export FLASK_APP="myapp:create_app()"
-# export FLASK_ENV="development" 
+# export FLASK_ENV="development"
