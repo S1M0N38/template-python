@@ -39,12 +39,11 @@ A carefully crafted Python project template that provides a solid foundation for
 git clone https://github.com/S1M0N38/template-python.git
 cd template-python
 
-# Create and activate environment
-uv venv
-uv pip install -e ".[dev]"
-
 # Activate environment
 source .venv/bin/activate
+
+# Create and activate environment
+uv sync --all-extras
 ```
 
 ### Development Commands
@@ -53,12 +52,15 @@ source .venv/bin/activate
 # Run tests
 pytest
 
+
 # Lint and format code
 ruff check
 ruff format
 
 # Type check
 pyright
+
+
 
 # Run the application
 python -m template_python
