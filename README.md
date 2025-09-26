@@ -39,14 +39,12 @@ A carefully crafted Python project template that provides a solid foundation for
 git clone https://github.com/S1M0N38/template-python.git
 cd template-python
 
-
 # Activate environment
+uv venv
 source .venv/bin/activate
-
 
 # Create and activate environment
 uv sync --all-extras
-
 ```
 
 ### Development Commands
