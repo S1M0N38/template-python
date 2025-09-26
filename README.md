@@ -55,15 +55,12 @@ uv sync --all-extras
 # Run tests
 pytest
 
-
-
 # Lint and format code
 ruff check
 ruff format
 
 # Type check
 basedpyright
-
 
 # Run the application
 python -m template_python
@@ -74,26 +71,10 @@ python -m template_python
 ```
 template-python/
 ├── src/template_python/    # Main package source
-
-
 ├── tests/                  # Test suite
-
-
-
 ├── .github/workflows/      # CI/CD automation
-
-
 ├── pyproject.toml         # Project configuration
-
-
-
-
-
 └── README.md              # This file
-
-
-
-
 ```
 
 ## Contributing
