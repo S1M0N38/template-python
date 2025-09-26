@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.1](https://github.com/S1M0N38/template-python/compare/v0.2.0...v0.2.1) (2025-09-26)
+
+
+### Documentation
+
+* add venv generation ([5c3f98e](https://github.com/S1M0N38/template-python/commit/5c3f98e6df4fc0756e22b46af60c6ebc89eee1ed))
+* revise environment setup and add sync command ([796b038](https://github.com/S1M0N38/template-python/commit/796b038ed73c9ff154ec478e09237c874de65e5c))
+* revise README for setup and development commands ([c12c71c](https://github.com/S1M0N38/template-python/commit/c12c71c6422853c8191763a6fb8d8a28d584e043))
+
 ## [0.2.0](https://github.com/S1M0N38/template-python/compare/v0.1.0...v0.2.0) (2025-08-08)
 
 
