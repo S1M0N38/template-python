@@ -10,7 +10,7 @@ This document provides guidelines and instructions for contributing to the proje
 
 2. **Submit Pull Requests**: For code contributions, fork the repository, make your changes, and submit a pull request.
 
-3. **Follow Coding Standards**: We use Ruff for linting and formatting, and pyright/basedpyright for type checking. Make sure your code passes all checks.
+3. **Follow Coding Standards**: We use Ruff for linting and formatting, and ty for type checking. Make sure your code passes all checks.
 
 4. **Write Tests**: For new features or bug fixes, please include tests to validate your changes.
 

@@ -17,7 +17,7 @@ A carefully crafted Python project template that provides a solid foundation for
 **Development Tools**
 - **uv** – Lightning-fast Python package management
 - **Ruff** – Blazing fast Python linter and formatter  
-- **Pyright** – Static type checker for Python
+- **Ty** – Static type checker for Python
 - **pytest** – Comprehensive testing framework
 
 **Automation**
@@ -58,7 +58,7 @@ ruff check
 ruff format
 
 # Type check
-basedpyright
+ty check
 
 # Run the application
 python -m template_python

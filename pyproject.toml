@@ -31,16 +31,8 @@ publish-url = "https://upload.pypi.org/legacy/"
 lint.extend-select = ["I"]
 lint.task-tags = ["FIX", "TODO", "HACK", "WARN", "PERF", "NOTE", "TEST"]
 
-[tool.pyright]
-typeCheckingMode = "basic"
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
 [dependency-groups]
-dev = [
-  "basedpyright>=1.31.1",
-  "pytest>=8.4.1",
-  "pytest-asyncio>=1.1.0",
-  "ruff>=0.12.8",
-]
+dev = ["pytest>=8.4.1", "pytest-asyncio>=1.1.0", "ruff>=0.12.8", "ty>=0.0.3"]
