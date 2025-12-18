@@ -46,7 +46,7 @@ Transform this generic template into a personalized starting point for your Pyth
    - Run `pytest` to execute test suite
    - Run `ruff check` for linting validation
    - Run `ruff format` for code formatting
-   - Run `basedpyright` for type checking
+   - Run `ty check` for type checking
    - Report success only if all commands pass (exit code 0)
 
 ### Validation
@@ -60,7 +60,7 @@ Transform this generic template into a personalized starting point for your Pyth
 - Verify tests pass (pytest exit code 0)
 - Ensure code passes linting (ruff check exit code 0)
 - Verify code formatting is correct (ruff format exit code 0)
-- Confirm type checking passes (basedpyright exit code 0)
+- Confirm type checking passes (ty exit code 0)
 
 ### Notes
 
