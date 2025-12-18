@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/S1M0N38/template-python/compare/v0.2.1...v0.3.0) (2025-12-18)
+
+
+### Features
+
+* move from basedpyright to ty ([37e28e4](https://github.com/S1M0N38/template-python/commit/37e28e45dd2d53343c71e942018fe7b9a573e80f))
+* update other parts of the template to use ty ([0f5b8aa](https://github.com/S1M0N38/template-python/commit/0f5b8aadde9b88b2fcf8155ddf7b1fe3c6cf5966))
+
 ## [0.2.1](https://github.com/S1M0N38/template-python/compare/v0.2.0...v0.2.1) (2025-09-26)
 
 
