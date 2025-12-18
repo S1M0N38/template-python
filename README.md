@@ -71,8 +71,8 @@ template-python/
 ├── src/template_python/    # Main package source
 ├── tests/                  # Test suite
 ├── .github/workflows/      # CI/CD automation
-├── pyproject.toml         # Project configuration
-└── README.md              # This file
+├── pyproject.toml          # Project configuration
+└── README.md               # This file
 ```
 
 ## Contributing
