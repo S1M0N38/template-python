@@ -46,7 +46,7 @@ format: ## Run formatters
 
 typecheck: ## Run typecheckers
 	@$(PRINT) "$(YELLOW)Running Python typechecker...$(RESET)"
-	@ty check
+	@uv run ty check
 
 quality: lint typecheck format ## Run code quality checks
 	@$(PRINT) "$(GREEN)✓ All checks completed$(RESET)"
