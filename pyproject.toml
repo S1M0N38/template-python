@@ -1,38 +1,52 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [ "hatchling" ]
+
 [project]
 name = "template-python"
 version = "0.3.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [{ name = "S1M0N38", email = "bertolottosimone@gmail.com" }]
+authors = [ { name = "S1M0N38", email = "bertolottosimone@gmail.com" } ]
 requires-python = ">=3.13"
-dependencies = []
 classifiers = [
   "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
 ]
 
-[project.urls]
-Homepage = "https://github.com/S1M0N38/template-python"
-Issues = "https://github.com/S1M0N38/template-python/issues"
-Repository = "https://github.com/S1M0N38/template-python"
-Changelog = "https://github.com/S1M0N38/template-python/blob/main/CHANGELOG.md"
-
-[project.scripts]
-template-python = "template_python:main"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.uv]
-publish-url = "https://upload.pypi.org/legacy/"
-
-[tool.ruff]
-lint.extend-select = ["I"]
-lint.task-tags = ["FIX", "TODO", "HACK", "WARN", "PERF", "NOTE", "TEST"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
+dependencies = [  ]
+urls.Changelog = "https://github.com/S1M0N38/template-python/blob/main/CHANGELOG.md"
+urls.Homepage = "https://github.com/S1M0N38/template-python"
+urls.Issues = "https://github.com/S1M0N38/template-python/issues"
+urls.Repository = "https://github.com/S1M0N38/template-python"
+scripts.template-python = "template_python:main"
 
 [dependency-groups]
-dev = ["pytest>=8.4.1", "pytest-asyncio>=1.1.0", "ruff>=0.12.8", "ty>=0.0.3"]
+dev = [
+  "commitizen>=4.11",
+  "google-yamlfmt>=0.21",
+  "mdformat>=0.7.22,<0.8",
+  "mdformat-footnote>=0.1.2",
+  "mdformat-frontmatter>=2.0.8",
+  "mdformat-gfm>=1",
+  "mdformat-gfm-alerts>=2",
+  "mdformat-simple-breaks>=0.0.1",
+  "pyproject-fmt>=2.11.1",
+  "ruff>=0.14.13",
+  "ty>=0.0.12",
+]
+test = [ "pytest>=9.0.2" ]
+
+[tool.ruff]
+lint.extend-select = [ "I" ]
+lint.task-tags = [ "FIX", "HACK", "NOTE", "PERF", "TEST", "TODO", "WARN" ]
+
+[tool.pytest.ini_options]
+testpaths = [ "tests" ]
+markers = [ "dev: marks tests that are currently developed" ]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version_provider = "pep621"
