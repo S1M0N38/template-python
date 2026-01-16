@@ -1,11 +1,6 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(pytest:*)",
-      "Bash(ruff check:*)",
-      "Bash(ruff format:*)",
-      "Bash(ty check:*)"
-    ],
+    "allow": [],
     "deny": [
       "Edit(CHANGELOG.md)",
       "Write(CHANGELOG.md)"
@@ -14,12 +9,12 @@
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "Write|Edit|MultiEdit",
+        "matcher": "Write|Edit",
         "hooks": [
           {
             "type": "command",
-            "command": "ruff check --select I --fix . && ruff format -s ."
-          },
+            "command": "make quality"
+          }
         ]
       }
     ]
