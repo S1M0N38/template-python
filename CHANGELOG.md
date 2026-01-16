@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.4.0](https://github.com/S1M0N38/template-python/compare/v0.3.0...v0.4.0) (2026-01-16)
+
+
+### Features
+
+* add .yamlfmt.yml for yaml formatting ([d4222cd](https://github.com/S1M0N38/template-python/commit/d4222cd4bc561b59ba09049a7ef5d55a62fc5603))
+* **claude:** udpate claude setttings to use makefile ([fa30b40](https://github.com/S1M0N38/template-python/commit/fa30b405955d379fcf8139b34c1595f11a23f251))
+* **github:** update actions to use make commands ([f3ec651](https://github.com/S1M0N38/template-python/commit/f3ec6511fa801038bde64a967cdcf365161cb8b5))
+* **make:** add Makefile ([6cf8e80](https://github.com/S1M0N38/template-python/commit/6cf8e800908a6a88457c095e977418f558b28ee2))
+* **pyproject:** add deps dev and test groups ([7636fa9](https://github.com/S1M0N38/template-python/commit/7636fa9a1b68179df63f51a758ab76fb74c3faf1))
+
+
+### Bug Fixes
+
+* **make:** prepend `uv run` to `ty` command ([e679e94](https://github.com/S1M0N38/template-python/commit/e679e943baf174b0df2a16ad9e36c46ade9ebd69))
+
+
+### Documentation
+
+* **readme:** update the readme with the new features and commands ([4e0f655](https://github.com/S1M0N38/template-python/commit/4e0f655b621d8e74a80f619e8e6d37b37752006b))
+
 ## [0.3.0](https://github.com/S1M0N38/template-python/compare/v0.2.1...v0.3.0) (2025-12-18)
 
 
