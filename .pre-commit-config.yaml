@@ -1,0 +1,74 @@
+# Pre-commit configuration using prek's built-in fast hooks
+# See https://github.com/j178/prek for more information
+
+repos:
+  # Built-in Rust hooks (fast, zero-setup)
+  - repo: builtin
+    hooks:
+      # Fix trailing whitespace (preserve markdown line breaks)
+      - id: trailing-whitespace
+        args: ['--markdown-linebreak-ext=md,markdown']
+
+      # Ensure files end with newline
+      - id: end-of-file-fixer
+
+      # Check for accidentally committed large files
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+
+      # Validate YAML files
+      - id: check-yaml
+
+      # Validate TOML files
+      - id: check-toml
+
+      # Normalize line endings to LF
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+
+      # Detect accidentally committed private keys
+      - id: detect-private-key
+
+      # Prevent direct commits to main/master
+      - id: no-commit-to-branch
+        args: ['--branch=main', '--branch=master']
+
+      # Detect merge conflict markers
+      - id: check-merge-conflict
+
+      # Check for case conflicts (macOS/Windows compatibility)
+      - id: check-case-conflict
+
+      # Remove UTF-8 byte order marker
+      - id: fix-byte-order-marker
+
+  # Local hooks using make commands
+  - repo: local
+    hooks:
+      # Run linting via make
+      - id: make-lint
+        name: Run make lint
+        entry: make lint
+        language: system
+        types: [python]
+        pass_filenames: false
+        stages: [pre-commit]
+
+      # Run formatting via make
+      - id: make-format
+        name: Run make format
+        entry: make format
+        language: system
+        pass_filenames: false
+        stages: [pre-commit]
+
+  # Commitizen for conventional commit validation
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.2.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+
+# Global configuration
+fail_fast: false
+default_stages: [pre-commit]

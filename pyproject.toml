@@ -33,6 +33,7 @@ dev = [
   "mdformat-gfm>=1",
   "mdformat-gfm-alerts>=2",
   "mdformat-simple-breaks>=0.0.1",
+  "prek>=0.3.1",
   "pyproject-fmt>=2.11.1",
   "ruff>=0.14.13",
   "ty>=0.0.12",
@@ -50,3 +51,5 @@ markers = [ "dev: marks tests that are currently developed" ]
 [tool.commitizen]
 name = "cz_conventional_commits"
 version_provider = "pep621"
+schema_pattern = "^(feat|fix|docs|chore|test|refactor|perf|ci|build|style)(\\((.*?)\\))?!?:\\s.+"
+message_max_length = 72
