@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.0](https://github.com/S1M0N38/template-python/compare/v0.4.0...v0.5.0) (2026-03-07)
+
+
+### Features
+
+* **git:** add pre-commit hooks ([26a73a1](https://github.com/S1M0N38/template-python/commit/26a73a1e8ece90cb15aba1d045e39f8170bd1d2b))
+
+
+### Bug Fixes
+
+* **make:** add `|| true` to pyproject-fmt ([480e645](https://github.com/S1M0N38/template-python/commit/480e64557e1b1d3e20db2ffabd4729b1da44ebe4))
+
 ## [0.4.0](https://github.com/S1M0N38/template-python/compare/v0.3.0...v0.4.0) (2026-01-16)
 
 
