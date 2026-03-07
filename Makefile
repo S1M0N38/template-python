@@ -42,7 +42,7 @@ format: ## Run formatters
 	@$(PRINT) "$(YELLOW)Running YAML formatter...$(RESET)"
 	@uv run yamlfmt .
 	@$(PRINT) "$(YELLOW)Running TOML formatter...$(RESET)"
-	@uv run pyproject-fmt -n pyproject.toml
+	@uv run pyproject-fmt -n pyproject.toml || true
 
 typecheck: ## Run typecheckers
 	@$(PRINT) "$(YELLOW)Running Python typechecker...$(RESET)"
